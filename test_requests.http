@@ -1,0 +1,93 @@
+###
+POST http://localhost:8080/framework
+Content-Type: application/json
+
+{
+    "name": "My Awesome First Framework",
+    "version": [123, 456],
+    "deprecationDate": "2020-02-22T16:37:23Z",
+    "hypeLevel": "HIGH"
+}
+
+<> 2021-10-14T220554.200.json
+<> 2021-10-14T220519.200.json
+<> 2021-10-14T220410.200.json
+<> 2021-10-14T220001.200.json
+<> 2021-10-14T215832.200.json
+<> 2021-10-14T215123.200.json
+<> 2021-10-14T215118.200.json
+<> 2021-10-14T214757.200.json
+<> 2021-10-14T212718.200.json
+<> 2021-10-14T211836.200.json
+<> 2021-10-14T211757.200.json
+
+###
+GET http://localhost:8080/framework/1
+
+<> 2021-10-14T220554-1.200.json
+<> 2021-10-14T214753.500.json
+<> 2021-10-14T212756.200.json
+<> 2021-10-14T212718.500.json
+<> 2021-10-14T211836-1.200.json
+<> 2021-10-14T211757.405.json
+
+###
+POST http://localhost:8080/framework/1
+Content-Type: application/json
+
+{
+    "name": "My Awesome updates Framework",
+    "version": [123, 456],
+    "deprecationDate": "2020-02-22T16:37:23Z",
+    "hypeLevel": "HIGH"
+}
+
+<> 2021-10-14T220554-2.200.json
+<> 2021-10-14T212806.200.json
+<> 2021-10-14T212718-1.500.json
+<> 2021-10-14T211837.200.json
+<> 2021-10-14T211757-1.200.json
+
+###
+GET http://localhost:8080/framework/1
+
+<> 2021-10-14T220554-3.200.json
+<> 2021-10-14T212719.500.json
+<> 2021-10-14T211837-1.200.json
+<> 2021-10-14T211757-2.200.json
+
+###
+GET http://localhost:8080/framework/search
+Content-Type: application/json
+
+{
+  "name": "Framework"
+}
+
+<> 2021-10-14T220554-4.200.json
+<> 2021-10-14T220533.200.json
+<> 2021-10-14T220421.200.json
+<> 2021-10-14T220109.200.json
+<> 2021-10-14T220041.200.json
+<> 2021-10-14T220009.200.json
+<> 2021-10-14T215836.200.json
+<> 2021-10-14T215129.200.json
+<> 2021-10-14T214819.200.json
+<> 2021-10-14T214803.200.json
+<> 2021-10-14T214746.200.json
+<> 2021-10-14T214736.200.json
+<> 2021-10-14T214614.500.json
+<> 2021-10-14T212835.200.json
+<> 2021-10-14T212821.200.json
+<> 2021-10-14T212719.200.json
+<> 2021-10-14T211837-2.200.json
+<> 2021-10-14T211758.200.json
+<> 2021-10-14T211734-1.200.json
+
+###
+DELETE http://localhost:8080/framework/1
+
+<> 2021-10-14T212719-1.500.json
+<> 2021-10-14T211734-1.500.json
+
+
